@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <h1>Create Your Own Blog</h1>
+        <nav>
+            <a href="/">Home</a>  |
+            <a href="/compose">Compose</a>
+        </nav>
+    </header>
+    <div class="container">
+  <main>
+  <% if (posts.length === 0) { %>
+    <div class="hero-image">
+      <img src="/images/img.png.jpg" alt="Create your own blog">
+      <p class="hero-text">Start your blogging journey now!</p>
+    </div>
+  <% } else { %>
+    <% posts.forEach(function(post) { %>
+      <div class="post">
+        <h2><%= post.title %></h2>
+        <p><a href="/posts/<%= post.title %>"><%= post.content %></a></p>
+        <div class="button-group">
+          <form action="/posts/<%= post.title %>/edit" method="GET" style="display:inline;">
+            <button type="submit" class="edit">Edit</button>
+          </form>
+          <form action="/posts/<%= post.title %>/delete" method="POST" style="display:inline;">
+            <button type="submit">Delete</button>
+          </form>
+        </div>
+      </div>
+    <% }); %>
+  <% } %>
+</main>
+
+    <%- include("partials/footer") %>
+    
+</body>
+</html>
+

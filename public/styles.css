@@ -1,0 +1,185 @@
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .post {
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px 10px;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #4A4947;
+ height: 100vh;
+}
+
+
+/* Header styling */
+header {
+background-color: #F8B259;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 10px 0;
+  
+  
+}
+.hero-image {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.hero-image img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero-text {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.container h2 {
+  
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color : #B17457;
+}
+
+nav {
+  margin-top: 10px;
+    text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+   font-size: 1.2rem; 
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #f1c40f;
+}
+
+/* Container for page content */
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* Post styling */
+.post {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.post h2 {
+  margin-top: 0;
+}
+
+.post a {
+  color: #4A4947;
+  text-decoration: none;
+}
+
+.post a:hover {
+  text-decoration: underline;
+}
+
+/* Form buttons */
+button {
+  background-color: #A59D84;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #c0392b;
+}
+.edit {
+  background-color: #A59D84;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.edit:hover {
+  background-color:  #c0392b;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.button-group form {
+  margin: 0;
+}
+
+.compose-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.compose-form input[type="text"],
+.compose-form textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+footer {
+  
+  text-align: center;
+  padding: 15px;
+  color: white;
+}
