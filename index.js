@@ -1,6 +1,6 @@
 import express from "express"
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 const posts=[];
 
 app.use(express.urlencoded({ extended: true }));
@@ -77,6 +77,6 @@ app.post("/posts/:postName/delete",(req,res)=>{
 })
 
 
-app.listen(port, ()=>{
-    console.log(`This server is running on port ${port}`);
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
 });
